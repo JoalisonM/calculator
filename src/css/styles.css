@@ -1,0 +1,136 @@
+:root {
+  --white: #ffffff;
+  --blue: #00a0fd;
+  --green: #70e0c8;
+  --gray-700: #29292e;
+  --gray-800: #1f2729;
+  --background: #121214;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--white);
+  background: var(--background);
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* .myName {
+  font-size: 1.5rem;
+  color: var(--cyan);
+}
+
+.content,  .content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 0.2rem 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+} */
+
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0 2rem;
+  max-width: 400px;
+  margin: 10rem auto;
+  background: var(--background);
+  border: 5px solid var(--gray-800);
+  border-radius: 2rem;
+  box-shadow: 4px 4px 1px #70e0c8;
+}
+
+span {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  color: var(--gray-800);
+}
+
+.display {
+  width: 100%;
+  height: 10rem;
+  overflow-x: auto;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  background: var(--gray-700);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+.contentCalc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.item {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 0.7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--white);
+  background: var(--gray-700);
+
+  transition: filter, border-radius 0.3s;
+}
+
+.item:hover {
+  filter: brightness(1.2);
+  border-radius: 1rem;
+}
+
+.item:first-child {
+  background: var(--green);
+}
+
+.item:last-child {
+  background: var(--white);
+}
+
+.blue {
+  background: var(--blue);
+}
+
+.item:first-child, .item:last-child, .blue {
+  color: var(--gray-700);
+  font-weight: 500;
+}
